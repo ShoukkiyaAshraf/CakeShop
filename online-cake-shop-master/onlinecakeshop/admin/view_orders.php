@@ -1,3 +1,6 @@
+
+
+
 <?php
 if (isset($_GET['edit_msg']) && $_GET['edit_msg'] == 1) {
     echo "<script>
@@ -166,8 +169,8 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                                 <th>S. No.</th>
                                                 <th>Orders id</th>
                                                 <th>Users id</th>
-                                                <th>Delivery date</th>
-                                                <th>Payment method</th>
+                                                
+                                                
                                                 <th>Total amount</th>
                                                 <th>Action</th>
                                             </tr>
@@ -184,8 +187,8 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                                 <td><?php echo $i++;?></td>
                                                 <td><?php echo $res['orders_id'];?></td>
                                                 <td><?php echo $res['users_id'];?></td>
-                                                <td><?php echo $res['delivery_date'];?></td>
-                                                <td><?php echo $res['payment_method'];?></td>
+                                             
+                                                
                                                 <td>Rs. <?php echo $res['total_amount'];?></td>
                                                 <td>
                                                     <button data-toggle="modal" data-target="#exampleModal" class="btn btn-space btn-primary" onclick="edit_orders(<?php echo $res['orders_id'];?>)">Edit</button>
@@ -194,7 +197,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                             </tr>
                                             <?php } ?>
                                         </tbody>
-                                        <tfoot>
+                                        <!-- <tfoot>
                                             <tr>
                                                 <th>S. No.</th>
                                                 <th>Orders id</th>
@@ -204,7 +207,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                                 <th>Total amount</th>
                                                 <th>Action</th>
                                             </tr>
-                                        </tfoot>
+                                        </tfoot> -->
                                     </table>
                                 </div>
                             </div>
@@ -248,7 +251,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                             </tr>
                                             <?php } ?>
                                         </tbody>
-                                        <tfoot>
+                                       <!-- <tfoot>
                                             <tr>
                                                 <th>S. No.</th>
                                                 <th>Orders id</th>
@@ -256,7 +259,7 @@ if (isset($_SESSION['user_admin_id']) && $_SESSION['user_admin_id'] != null) {
                                                 <th>Quantity</th>
                                                 <th>Action</th>
                                             </tr>
-                                        </tfoot>
+                                        </tfoot> -->
                                     </table>
                                 </div>
                             </div>

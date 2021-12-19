@@ -93,9 +93,8 @@ else {
                                     <?php
                                      }else{
                                     ?>
-                                    <li><a href="register.php">SignUp</a> <span class= "ca"</span>
-                                    </li>
-                                    <li><a href="login_users.php">Login</a> <span class= "ca" </span>
+                                    
+                                    <li><a href="logout_users.php">Logout</a> <span class= "ca" </span>
                                     </li>
                                 <?php }?>
                                 </ul>

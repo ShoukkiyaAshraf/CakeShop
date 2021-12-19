@@ -59,7 +59,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__option">
             <ul>
-                
+               
                 <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
             </ul>
         </div>
@@ -74,13 +74,13 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
                     <div class="col-lg-12">
                         <div class="header__top__inner">
                             <div class="header__top__left">
-                                
+                               
                             </div>
                             <div class="header__logo">
                                 <a href="./index.html"><img src="img/logo.png" alt=""></a>
                             </div>
-                            
-                                
+                           
+                               
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
                 <div class="canvas__open"><i class="fa fa-bars"></i></div>
             </div>
         </div>
-        
+       
     </header>
     <!-- Header Section End -->
     <!-- ============================================================== -->
@@ -97,7 +97,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
     <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    
+                   
                     <div class="class__sidebar">
                         <h5><center>Sign_Up Form</center></h5>
                         <p>Please enter your user information.</p>
@@ -106,20 +106,20 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
                             <input type="text" name="users_username" required placeholder="Userame">
 
                             <label>Email</label>
-                            <input type="text" name="users_email" required placeholder="E-mail">
-                            
+                            <input type="email" name="users_email" required placeholder="E-mail">
+                           
                             <label>Password</label>
-                            <input id="pass1" type="password" name="users_password" required placeholder="Password">
+                            <input id="pass1" type="password" name="users_password" required placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 
                             <label>Confirm Password</label>
-                            <input data-parsley-equalto="#pass1" type="password" name="repassword" required placeholder="Confirm Password">
+                            <input data-parsley-equalto="#pass1" type="password" name="repassword" required placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Retype password is incorrect!! Try again">
 
                             <label>Mobile Number</label>
                             <input type="tel" name="users_mobile" data-parsley-trigger="change" required placeholder="Mobile No." pattern="[0-9]{10}" autocomplete="off">
                             <label>Address</label>
                             <input type="text" name="users_address" data-parsley-trigger="change" required placeholder="Address" autocomplete="off">
                             <button class="site-btn" type="submit">Register</button>
-                            
+                           
                             <p>Already member? <a href="login_users.php" class="text-secondary">Login Here.</a></p>
                         </form>
                     </div>

@@ -94,9 +94,11 @@ else {
                                     <?php
                                      }else{
                                     ?>
-                                    <li><a href="register.php">SignUp</a> <span class= "ca"</span>
+                                   <!-- <li><a href="register.php">SignUp</a> <span class= "ca"</span>
                                     </li>
                                     <li><a href="login_users.php">Login</a> <span class= "ca" </span>
+                                    </li> -->
+					<li><a href="logout_users.php">Logout</a> <span class= "ca" </span>
                                     </li>
                                 <?php }?>
                                 </ul>
@@ -125,11 +127,11 @@ else {
                 <div class="col-lg-12">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="index.php">Home</a></li>
+                            <li class="#"><a href="index.php">Home</a></li>
                             <li><a href="about.php">About US</a></li>
                     
 
-                            <li><a href="#">Products</a>
+                            <li class="active"><a href="#">Products</a>
                                 <ul class="dropdown">
                                 
                                     <?php

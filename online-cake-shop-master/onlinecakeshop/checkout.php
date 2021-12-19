@@ -301,6 +301,7 @@ p#final_result {
                     // $printCount[$i]['price'] = $res['price'];
                     for($i=0; $i<count($printCount); $i++){
                         $total_amount += $printCount[$i]['price'];
+			
                     ?>
                     <tr>
                     
@@ -318,10 +319,10 @@ p#final_result {
                     <td align="center"><a href="remove_product.php?val_i=<?php echo $i;?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
 
-                       <?php } echo '<p id="final_result">Total Amount - Rs.'.$total_amount.'</p>' ;} ?>
+                      <?php } echo '<p id="final_result">Total Amount - Rs.'.$total_amount.'</p>' ;} ?> 
                         
                             </tbody>
-                        </table>
+                        </table> 
                     </div>
             </div>
         </div>

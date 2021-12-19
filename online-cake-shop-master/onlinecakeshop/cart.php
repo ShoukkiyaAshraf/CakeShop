@@ -207,8 +207,9 @@ p#total_amount {
                                     <th>Product ID</th>
                                     <th>Product Name</th>
                                     <th>Product Price</th>
-                                    <th>Total</th>
-                                    <th>Amount to be Paid</th>
+                                    <th>Qty</th>
+                                    <th>Total price</th>
+				    
                                 </tr>
                             </thead>
                             <tbody>
@@ -236,12 +237,24 @@ p#total_amount {
                     <td><?php echo $res['product_name'];?><input type="hidden" name="hidden_product_name[]" value="<?php echo $res['product_name'];?>"></td>
                     <td>Rs. <?php echo $res['product_price'];?><input type="hidden" name="hidden_product_price[]" value="<?php echo $res['product_price'];?>"></td>
                     <td><input id="<?php echo 'count_'.$j?>"class="form-control" type="number" min="1" max="9" step="1" value="1" name="product_quantity[]" onchange="prodTotal(<?php echo $res['product_price'];?>,<?php echo $j;?>)"></td>
-                    <td><?php echo "<span class='paid_price' id='action_val".$j."'>";?>Rs. <?php echo $res['product_price'] * 1;?></span><input id="<?php echo 'action_input_val'.$j;?>" type="hidden" name="hidden_product_total[]" value="<?php echo $res['product_price'];?>"></td>
+                    <td><?php echo "<span class='paid_price' id='action_val".$j."'>";?> <?php echo $res['product_price'] * 1;?></span><input id="<?php echo 'action_input_val'.$j;?>" type="hidden" name="hidden_product_total[]" value="<?php echo $res['product_price'];?>"></td>
                     <td align="center"><a href="remove_product.php?val_i=<?php echo $i;?>"><i class="fas fa-trash-alt"></i></a></td>
+		     <td align="center"><a href="remove_product.php?val_i=<?php echo $i;?>"><span class="text-danger">Remove</span></a></td>
                     </tr>
+
                        <?php } ?>
                        <?php } echo '<input style="display:none;" type="text" value="'.$j.'" id="row_count" />';?>
                        <?php } ?>
+
+                        
+                                            <tr>
+                                                <td colspan="1">
+                                                    Delivery Date:<input class="form-control" type="date" name="delivery_date" required="">
+                                                </td>
+					    </tr>
+                                                   
+
+                       
                         
                             </tbody>
                         </table>

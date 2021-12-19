@@ -86,10 +86,10 @@ else {
                                 <ul>
                                     
                                     </li>
-                                    <li><a href="register.php">SignUp</a> <span class= "ca"</span>
+                                    <!-- <li><a href="register.php">SignUp</a> <span class= "ca"</span>
                                     </li>
                                     <li><a href="login_users.php">Login</a> <span class= "ca" </span>
-                                    </li>
+                                    </li> -->
                                     <li><a href="logout_users.php">Logout</a> <span class= "ca" </span>
                                     </li>
                                 </ul>
@@ -122,7 +122,7 @@ else {
                             <li  class="active"><a href="about.php">About US</a></li>
                     
 
-                            <li><a href="#">Products Details</a>
+                            <li><a href="#">Products</a>
                                 <ul class="dropdown">
                                 
                                     <?php
@@ -283,7 +283,7 @@ else {
             <div class="row">
                 <div class="col-lg-4 col-md-7">
                     <div class="map__inner">
-                        
+                       
                         <ul>
                             <li>Thrissur, India</li>
                             <li>Cracknbake@gmail.com</li>
@@ -337,7 +337,7 @@ else {
                   </div>
                   <div class="col-lg-5">
                     <div class="copyright__widget">
-                        
+                       
                     </div>
                 </div>
             </div>

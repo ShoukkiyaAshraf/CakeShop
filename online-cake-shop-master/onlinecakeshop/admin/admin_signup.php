@@ -8,6 +8,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
 <html lang="en">
  
 <head>
+<sty
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -49,7 +50,7 @@ if (isset($_GET['register_msg']) && $_GET['register_msg'] == 1) {
             </div>
             <div class="card-body">
                 <div class="form-group">
-                    <input class="form-control form-control-lg" type="text" name="admin_username" data-parsley-trigger="change" required="" placeholder="Username" autocomplete="off">
+                    <input class="form-control form-control-lg" type="text" name="admin_username" pattern="^[A-Za-z -.]+$" data-parsley-trigger="change" placeholder="Username" autocomplete="off" required/>
                 </div>
                 <div class="form-group">
                     <input class="form-control form-control-lg" type="email" name="admin_email" data-parsley-trigger="change" required="" placeholder="E-mail" autocomplete="off">
